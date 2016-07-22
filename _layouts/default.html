@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" type="image/png" href="/css/favicon.png">
   </head>
   <body>
     {% if page.url == "/" %}
@@ -22,7 +23,7 @@
       <ul>
         <li><a href="/">Blog</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="#">Twitter</a></li>
+        <li><a href="{{ site.twitter_url }}">Twitter</a></li>
       </ul>
     </nav>
     <main>

@@ -31,6 +31,10 @@
         {{ content }}
       </div>
     </main>
-    <div class="bottom"></div>
+    {% if page.url != "/" %}
+      <div class="bottom"></div>
+    {% else %}
+      <div></div>
+    {% endif %}
   </body>
 </html>

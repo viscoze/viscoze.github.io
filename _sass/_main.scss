@@ -135,6 +135,7 @@ main {
     width: 50%;
     background-color: white;
     padding: 30px;
+    margin-bottom: 20px;
 
     div.post-header {
       border-bottom: 1px solid rgba($font-color, 0.2);
@@ -175,10 +176,8 @@ footer {
 }
 
 div.bottom {
-  position: absolute;
-  bottom: 0px;
+  position: relative;
   width: 100%;
   min-height: 8px;
   background-color: $header-background;
-  color: white;
 }

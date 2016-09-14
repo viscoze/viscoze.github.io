@@ -12,7 +12,7 @@ syntax constructions to create new code. That's it.
 
 Ruby has many build-in methods to manipulate with program constructions and
 it isn't a piece of cake to learn it all at once. It would be better to start
-with the widely speared metamethods.
+with the widely spread metamethods.
 
 Lets discuss class_eval and instance_eval - basic parts of Ruby's meta.
 

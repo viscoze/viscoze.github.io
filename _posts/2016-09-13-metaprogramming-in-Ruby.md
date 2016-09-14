@@ -2,13 +2,17 @@
 layout: post
 ---
 
-When I was eleven, I thought that it would be cool, if I could invent program,
-that could write an another program. So, now we have many languages, which can
-create new parts of code in a runtime.
+When I was eleven, I thought that it would be cool if I could invent a program,
+that could write another program. So, now we have many languages, which can
+create new parts of code at runtime.
 
-Although, It isn't kinda artificial intellegence. Metaprogramming in Ruby is just
-a ability to write a code, that can operate syntax constructions to create new
-code. That's it.
+Although, it isn't kinda artificial intelligence. It's a metaprogramming.
+Metaprogramming in Ruby is just an ability to write a code that can operate
+syntax constructions to create new code. That's it.
+
+Ruby has many build-in methods to manipulate with program constructions and
+it isn't a piece of cake to learn it all at once. It would be better to start
+with the widely speared metamethods.
 
 Lets discuss class_eval and instance_eval - basic parts of Ruby's meta.
 
@@ -39,7 +43,7 @@ You may say, that it's kinda strange. Yes, it is. Just remember it.
 
 ### instance_eval
 
-There is an another Kernel method, which we can use: instance_eval. It opens
+There is an another Kernel method which we can use: instance_eval. It opens
 object and evaluates the code inside it. Access to instance variables,
 methods - all of this stuff.
 
@@ -93,17 +97,17 @@ via
 
 {% highlight ruby %}
 
-class Class
-  def init(\*args)
-    params = args.join(', ')
-    body   = args.map { |arg| "@#{arg}=#{arg}" }.join('; ')
-    self.class_eval "def initialize(#{params}); #{body}; end;"
+  class Class
+    def init(\*args)
+      params = args.join(', ')
+      body   = args.map { |arg| "@#{arg}=#{arg}" }.join('; ')
+      self.class_eval "def initialize(#{params}); #{body}; end;"
+    end
   end
-end
 
-class MyClass
-  init :name, :title
-end
+  class MyClass
+    init :name, :title
+  end
 
 {% endhighlight %}
 

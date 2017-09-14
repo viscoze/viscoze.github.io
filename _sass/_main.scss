@@ -1,5 +1,5 @@
-$header-background: #54c0d1;
-$body-background: #e6e6e6; /* #f7f8fa */
+$header-background: #E35769; /* #54c0d1 */
+$body-background: #f1f1f1; /* #f7f8fa */
 $footer-background: #eeeeee;
 $font-color: #585858;
 
@@ -106,11 +106,11 @@ main {
   }
 
   div.post-preview {
-    width: 33%;
+    width: 45%;
     min-height: 90px;
     background-color: white;
     margin-bottom: 30px;
-    padding: 20px;
+    padding: 15px;
     padding-left: 40px;
     border-radius: 3px;
     border-left: 4px solid $header-background;
@@ -132,7 +132,7 @@ main {
   }
 
   div.post {
-    width: 50%;
+    width: 55%;
     background-color: white;
     padding: 30px;
     margin-bottom: 20px;

@@ -22,7 +22,7 @@
     <nav>
       <ul>
         <li><a href="/">Blog</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="/about">About</a></li>
         <li><a href="{{ site.twitter_url }}">Twitter</a></li>
       </ul>
     </nav>
@@ -31,7 +31,7 @@
         {{ content }}
       </div>
     </main>
-    {% if page.url != "/" %}
+    {% if page.url != "/" and page.url != "/about/" %}
       <div class="bottom"></div>
     {% else %}
       <div></div>
